@@ -25,8 +25,8 @@
 typedef struct isl_union_set isl_union_set;
 typedef struct isl_union_map isl_union_map;
 
-#include "isl/ctx.h"
 #include "osl/scop.h"
+#include "isl/ctx.h"
 
 #include "pluto/matrix.h"
 
@@ -115,6 +115,9 @@ struct plutoOptions {
 
   /* For experimental purposes with dfp */
   int delayed_cut;
+
+  /* For experimental purposes */
+  int intra_tile_distribute;
 
   /* Tyepd fuse at outer levels, max fuse at inner levels */
   int hybridcut;
